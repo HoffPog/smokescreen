@@ -1,13 +1,19 @@
-// components/MyForm.tsx
+
 
 "use client"
+
+interface Character {
+    id: number;
+    name: string;
+}
+
 
 import React, { useState } from 'react';
 import { getToonID } from './api';
 
 const MyForm: React.FC = () => {
   const [inputValue, setInputValue] = useState<string>('');
-  const [characterID, setCharacterID] = useState(null)
+  const [characterID, setCharacterID] = useState<Character | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
