@@ -4,7 +4,8 @@ import MyForm from "./form";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'EVE Smokescreen'
+  title: 'EVE Smokescreen',
+  description: 'Smokescreen'
 }
 
 export default function Home() {
