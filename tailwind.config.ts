@@ -7,10 +7,18 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
     extend: {
+
+      fontFamily: {
+        silkscreen: ['Silkscreen', 'cursive']
+      },
+
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'white': 'ffffff',
+        'blue': '0000ff'
       },
     },
   },
